@@ -25,5 +25,8 @@ int main()
     printf("%d\n", sizeof(size_t));
     printf("%d\n", sizeof(long unsigned int));
     printf("%d\n", sizeof(u_char));
-    
+   
+    printf("the length of str is:%d\n", str.len); 
+    printf("str is:%s\n", str.data); 
+    printf("the length of \"hello world\"is:%d\n", sizeof("hello world")); 
 }
