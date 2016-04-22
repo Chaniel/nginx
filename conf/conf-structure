@@ -1,0 +1,41 @@
+conf
+
+├── fastcgi.conf
+├── fastcgi.conf.default
+├── fastcgi_params
+├── fastcgi_params.default
+├── koi-utf
+├── koi-win
+├── mime.types
+├── mime.types.default
+├── nginx.conf
+├── nginx.conf.default
+├── scgi_params
+├── scgi_params.default
+├── uwsgi_params
+├── uwsgi_params.default
+├── vhosts
+│   ├── hexo.conf
+│   └── octopress.conf
+└── win-utf
+
+
+# nginx.conf
+http{
+     include vhosts/*.conf;
+}
+
+# octopress.conf
+server {
+    listen 81;
+    root html/octopress_bak;
+}
+
+
+# hexo.conf
+server {
+    listen 82;
+    root html/hexo_bak;
+}
+
+
