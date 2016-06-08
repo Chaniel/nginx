@@ -1,0 +1,7 @@
+
+/sites/downloads/images/*.png...
+
+location /downloads {
+    root /sites;
+    try_files $uri =404;
+}
