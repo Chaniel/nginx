@@ -1,5 +1,3 @@
-
-
 # Remove Unused Modules
 ./configure --help | grep without
 such as: autoindex
