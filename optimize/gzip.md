@@ -1,3 +1,4 @@
+```bash
 server {
 
 # gzip config
@@ -13,9 +14,11 @@ server {
   
 }
 
+```
 
-
-# gzip test, compare the size using gzip and not using gzip.
+gzip test, compare the size using gzip and not using gzip.
+```bash
 # curl -H 'Accept-Encoding:gzip,deflate' http://ip/css/style.css > style_compressed.css
 # curl http://ip/css/style.css > style_uncompressed.css
 # ls -lh
+```

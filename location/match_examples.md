@@ -1,3 +1,4 @@
+```conf
 # match only  /project
         location = /project {
             return 200 '/project';
@@ -18,3 +19,4 @@
         location ~ /apple {
             return 200 '/project';
         }
+```

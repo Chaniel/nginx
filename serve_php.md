@@ -1,3 +1,4 @@
+```bash
 http {
   
   charset utf-8;
@@ -9,7 +10,6 @@ http {
   open_file_cache_valid 30s;
   open_file_cache_min_users 2;
   open_file_cache_errors on;
-  
   
   
   include mime.types;
@@ -37,3 +37,4 @@ http {
   }
   
 }
+```

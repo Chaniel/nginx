@@ -1,4 +1,5 @@
 
+```bash
 http {
 
   fastcgi_cache_path /tmp/nginx_cache levels=1:2 keys_zone=microcache:10m max_size=500m;
@@ -33,19 +34,19 @@ http {
       fastcgi_cache_valid 200 60m;
       
       fastcgi_cache_bypass $no_cache;
-      fastcgi_no_cache $no_cache;
-      
+      fastcgi_no_cache $no_cache; 
     }
-  
-  
   }
 }
+```
 
-# testing:
-# 1. whole testing , use ab
-# 2. bypass testing
-      curl -I http://127.0.0.1/wp-admin
-      curl -I http://127.0.0.1?somevar=1
-      
+# testing:  
+1. whole testing , use ab
+2. bypass testing
+
+```bash
+curl -I http://127.0.0.1/wp-admin
+curl -I http://127.0.0.1?somevar=1
+```
       
 

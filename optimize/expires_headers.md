@@ -1,3 +1,4 @@
+```bash
 location ~* \.(css|js|jpg|png|gif)$ {
   access_log off;
   expires 1M;
@@ -5,3 +6,4 @@ location ~* \.(css|js|jpg|png|gif)$ {
   add_header Cache-Control public;
   add_header Vary Accept-Encoding;
 }
+```
